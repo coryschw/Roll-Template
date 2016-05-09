@@ -1,8 +1,10 @@
-Title: 5E Roll Template Generator
-Program: RollTemplate.exe
-Author: Cory Schwarting
+#README
 
-#Release Notes:
+###Title: 5E Roll Template Generator
+###Program: RollTemplate.exe
+###Author: Cory Schwarting
+
+#####Release Notes:
 
 Rev 1: 
 - Initial Release
@@ -22,15 +24,15 @@ Rev 4:
 Rev 5:
 - Fixed Spell Save calculation, it wasn't using the spellcasting modifier, but the actual spellcasting attribute value.
 
-#About:
+#####About:
 I have made a utility for creating Roll Template Macros compatible with the 5th Edition (Community Contributes) Character Sheets. It is a small executable that will allow you to enter in the data to make it look like a roll from the character sheet. Makes quick work when you are trying to create macro's and you want them to look nice.
 
-#Credits:
+#####Credits:
 I want to thank Ditto8353 for their post on Reddit on 5E Default Roll Template.  It is what has helped me the most in creating this program.  If you are interrested in learning more about it, please see the site here: https://www.reddit.com/r/Roll20/comments/2zx7a1/dd_5e_roll_template/
 
 I also want to thank the artist iconcubic for their Icon files they submitted to iconarchive.com.  I have used the D20 Icon for use on this program.  For more information about the icon, and where do download it, and other dice icons, please see the site here: http://www.iconarchive.com/show/dnd-dice-icons-by-iconcubic/d20-icon.html
 
-#DETAILS
+#####DETAILS
 
 - Reset Button: Resets all the fields back to default values.
 
@@ -38,7 +40,7 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 
 - Use selected token: This checkbox will add a "selected|" to all references to the character sheet. This is useful if you are making a macro to be used on multiple tokens and character sheets. 
 
-#Header
+#####Header
 
 - Roll Type: This combo box choses the templates color pallete that matches the character sheet.  Each type has a different color associated with it.  For example, Weapon is Green and Spells are Purple.
 
@@ -50,7 +52,7 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 
 - Emote: This does not appear in the header, but immediately below it inside a dashed line box.  This can be used to state what your character is doing, saying, or what the ability is doing.  I find this a great place to create a Rollable Table of Viscious Mockery Insults, and roll them through the Emote.
 
-#Attack
+#####Attack
 
 - Enable Attack: This check box will enable/disable the use of the Attack information being added to the macro.  This has to be enabled for the Enable Advantage/Disadvantage to be used.
 
@@ -64,7 +66,7 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 
 - Quick Select: These buttons are used to quickly configure the base requirements for each type of use case.  Melee will enable Attack/Advantage, Damage, Critical, and disable Spell Info, and Saves. Custom fields are NOT cleared.  This will configure for each type, Finesse and Ranged are similar to Melee, but use Dexterity Modifier, NPC will enable the NPC Checkbox, Demo will create a Greatsword Macro as an example, Intelligence, Wisdom, and Charisma will setup Spell Attacks, and Spell Save will configure the macro for a Spell Save.
 
-#Damage
+#####Damage
 
 - Enable Damage: This check box will enable/disable the Damage fields for being used in the macro.  This has to be enabled for the Enable Additional Damage fields to be added as well.
 
@@ -82,7 +84,7 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 
 - Type: Since Damage/Healing are the same type of rolls, you can switch this page between Damage and Healing.  If Healing is selected, the tab will modify to show you are in Healing mode.  It will display in the Roll Template as Healing.  This does not require the Spell_Damage checkbox to be enabled.
 
-#Critical Damage
+#####Critical Damage
 
 - Enable Critical Damage: This check box will enable/disable the Critical Damage fields for being used in the macro. This has to be enabled for the Enable Additional Damage fields to be added as well.
 
@@ -94,7 +96,7 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 
 - Special: This text box is for the dice rolls (formated as 2d4+2).
 
-#Spell Info
+#####Spell Info
 
 - Enable Spell Info?: This check box will enable/disable the inclusion of the spell info.  This includes the Class, Cast Time, Duration, Target, Range, and Components.
 
@@ -126,7 +128,7 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 
 - DC Save Stat: The type of save required against the spell.
 
-#Spell Description
+#####Spell Description
 
 - Spell Description: This checkbox will enable the text box below to to be intered into the Spell Description field.
 
@@ -136,7 +138,7 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 
 - Spell Higher Level: This checkbox will enable the text box below to to be intered into the Spell Higher Level field
 
-#Custom
+#####Custom
 
 - Label: These boxes will the the title of the label on any custom fields.
 
