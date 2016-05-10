@@ -1,1 +1,11 @@
 RollTemplate.vshost.exe
+RollTemplate/obj/x86/Release/RollTemplate.Properties.Resources.resources
+*.pdb
+RollTemplate/obj/x86/Release/RollTemplate.Main.resources
+RollTemplate/obj/x86/Release/RollTemplate.Generate_Popup.resources
+RollTemplate/obj/x86/Release/RollTemplate.exe.manifest
+RollTemplate/obj/x86/Release/RollTemplate.exe
+RollTemplate/obj/x86/Release/RollTemplate.csproj.GenerateResource.Cache
+RollTemplate/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache
+RollTemplate/obj/x86/Release/RollTemplate.application
+RollTemplate/obj/x86/Release/RollTemplate.csproj.FileListAbsolute.txt
