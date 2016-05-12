@@ -420,7 +420,7 @@ namespace RollTemplate
                     Add("showclassactions=1");
                     showclassactions = true;
                 }
-                Add(Custom_text.Text);
+                Add_Raw(Custom_text.Text);
             }
 
             Generate_Popup form = new Generate_Popup();
@@ -437,6 +437,11 @@ namespace RollTemplate
         private void Add(string value)
         {
             Template_String = Template_String + " {{" + value + "}}";
+        }
+
+        private void Add_Raw(string value)
+        {
+            Template_String = Template_String + value;
         }
 
         private string ComboBoxItem_To_LowerString(object input)
