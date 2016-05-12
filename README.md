@@ -25,7 +25,7 @@ Rev 5:
 - Fixed Spell Save calculation, it wasn't using the spellcasting modifier, but the actual spellcasting attribute value.
 
 Rev 6:
-- Fixed Custom Text Box from having "{{" nad "}}" placed around it.  This section should be unformatted and RAW text by the user.
+- Fixed Custom Text Box from having "{{" and "}}" placed around it.  This section should be unformatted and RAW text by the user.
 
 #####About:
 I have made a utility for creating Roll Template Macros compatible with the 5th Edition (Community Contributes) Character Sheets. It is a small executable that will allow you to enter in the data to make it look like a roll from the character sheet. Makes quick work when you are trying to create macro's and you want them to look nice.
