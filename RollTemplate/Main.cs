@@ -611,6 +611,10 @@ namespace RollTemplate
             }
         }
 
+        /****************************
+         * Character Sheets Switcher
+         ***************************/
+
         private string AttributeModifierSwitcher(string value)
         {
             if (value.Equals("strength"))
