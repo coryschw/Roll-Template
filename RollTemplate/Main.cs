@@ -702,31 +702,31 @@ namespace RollTemplate
         private void communitySheetsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Community_Sheets = true;
-            communitySheetsToolStripMenuItem.Checked = true;
+            communityToolStripMenuItem.Checked = true;
             OGL_Sheets = false;
             oGLToolStripMenuItem.Checked = false;
             Shaped_Sheets = false;
-            shapedSheetsToolStripMenuItem.Checked = false;
+            shapedToolStripMenuItem.Checked = false;
         }
 
         private void oGLSheetsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Community_Sheets = false;
-            communitySheetsToolStripMenuItem.Checked = false;
+            communityToolStripMenuItem.Checked = false;
             OGL_Sheets = true;
             oGLToolStripMenuItem.Checked = true;
             Shaped_Sheets = false;
-            shapedSheetsToolStripMenuItem.Checked = false;
+            shapedToolStripMenuItem.Checked = false;
         }
 
         private void shapedSheetsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Community_Sheets = false;
-            communitySheetsToolStripMenuItem.Checked = false;
+            communityToolStripMenuItem.Checked = false;
             OGL_Sheets = false;
             oGLToolStripMenuItem.Checked = false;
             Shaped_Sheets = true;
-            shapedSheetsToolStripMenuItem.Checked = true;
+            shapedToolStripMenuItem.Checked = true;
         }
 
     }

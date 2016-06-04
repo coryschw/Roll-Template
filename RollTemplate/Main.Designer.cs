@@ -182,8 +182,8 @@
             this.Selected_check = new System.Windows.Forms.CheckBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.characterSheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.communitySheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shapedSheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.communityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shapedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oGLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1830,28 +1830,28 @@
             // characterSheetsToolStripMenuItem
             // 
             this.characterSheetsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.communitySheetsToolStripMenuItem,
-            this.shapedSheetsToolStripMenuItem,
+            this.communityToolStripMenuItem,
+            this.shapedToolStripMenuItem,
             this.oGLToolStripMenuItem});
             this.characterSheetsToolStripMenuItem.Name = "characterSheetsToolStripMenuItem";
             this.characterSheetsToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
             this.characterSheetsToolStripMenuItem.Text = "Character Sheets";
             // 
-            // communitySheetsToolStripMenuItem
+            // communityToolStripMenuItem
             // 
-            this.communitySheetsToolStripMenuItem.Checked = true;
-            this.communitySheetsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.communitySheetsToolStripMenuItem.Name = "communitySheetsToolStripMenuItem";
-            this.communitySheetsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.communitySheetsToolStripMenuItem.Text = "Community";
-            this.communitySheetsToolStripMenuItem.Click += new System.EventHandler(this.communitySheetsToolStripMenuItem_Click);
+            this.communityToolStripMenuItem.Checked = true;
+            this.communityToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.communityToolStripMenuItem.Name = "communityToolStripMenuItem";
+            this.communityToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.communityToolStripMenuItem.Text = "Community";
+            this.communityToolStripMenuItem.Click += new System.EventHandler(this.communitySheetsToolStripMenuItem_Click);
             // 
-            // shapedSheetsToolStripMenuItem
+            // shapedToolStripMenuItem
             // 
-            this.shapedSheetsToolStripMenuItem.Name = "shapedSheetsToolStripMenuItem";
-            this.shapedSheetsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.shapedSheetsToolStripMenuItem.Text = "Shaped";
-            this.shapedSheetsToolStripMenuItem.Click += new System.EventHandler(this.shapedSheetsToolStripMenuItem_Click);
+            this.shapedToolStripMenuItem.Name = "shapedToolStripMenuItem";
+            this.shapedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.shapedToolStripMenuItem.Text = "Shaped";
+            this.shapedToolStripMenuItem.Click += new System.EventHandler(this.shapedSheetsToolStripMenuItem_Click);
             // 
             // oGLToolStripMenuItem
             // 
@@ -1864,7 +1864,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 324);
+            this.ClientSize = new System.Drawing.Size(452, 325);
             this.Controls.Add(this.Selected_check);
             this.Controls.Add(this.Reset_btn);
             this.Controls.Add(this.Generate_btn);
@@ -2062,8 +2062,8 @@
         private System.Windows.Forms.RadioButton Damage_Type_Damage_radio;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem characterSheetsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem communitySheetsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem shapedSheetsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem communityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shapedToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oGLToolStripMenuItem;
 
     }
