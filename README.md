@@ -27,6 +27,11 @@ Rev 5:
 Rev 6:
 - Fixed Custom Text Box from having "{{" and "}}" placed around it.  This section should be unformatted and RAW text by the user.
 
+Rev 7:
+- Expanded functionality to include D&D 5th Edition OGL Sheets and Shaped Sheets.
+- Added a Drop-down menu to allow the selection of which sheet to use (Community sheet being default).
+- New functions and switch statement to know which attribute to grab string of, and boolean to determine current selected state.
+
 #####About:
 I have made a utility for creating Roll Template Macros compatible with the 5th Edition (Community Contributes) Character Sheets. It is a small executable that will allow you to enter in the data to make it look like a roll from the character sheet. Makes quick work when you are trying to create macro's and you want them to look nice.
 
@@ -42,6 +47,8 @@ I also want to thank the artist iconcubic for their Icon files they submitted to
 - Generate Button: This will generate the macro and create a Pop- Up window to all you to manually edit any parts of the Macro.  A button is included to allow single click to copy to clipboard for pasting into Roll20.
 
 - Use selected token: This checkbox will add a "selected|" to all references to the character sheet. This is useful if you are making a macro to be used on multiple tokens and character sheets. 
+
+- Character Sheets: This drop down menu will allow you to select between the different 5th Edition Character Sheets currently supported by Roll20.  Depending on which character sheet you would like to use, you can change the program to use the references of the corrisponding sheet.  Currently supported are: D&D 5e Community Sheet (default), D&D 5e Shaped Sheet, D&D OGL Sheet by Roll20.
 
 #####Header
 
