@@ -106,6 +106,28 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.Damage_Type_Damage_radio = new System.Windows.Forms.RadioButton();
             this.Damage_Type_Healing_radio = new System.Windows.Forms.RadioButton();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.Critical_Additional2_Type_text = new System.Windows.Forms.TextBox();
+            this.Critical_Additional_Type_text = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.Critical_Additional2_Dice_text = new System.Windows.Forms.TextBox();
+            this.Critical_Additional_Dice_text = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.Critical_Crit_Type_text = new System.Windows.Forms.TextBox();
+            this.Critical_Crit_Dice_combo = new System.Windows.Forms.ComboBox();
+            this.Critical_Enable_Additional2_check = new System.Windows.Forms.CheckBox();
+            this.Critical_Enable_Additional_check = new System.Windows.Forms.CheckBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.Critical_Crit_NumDice_numeric = new System.Windows.Forms.NumericUpDown();
+            this.Critical_Enable_Crit_check = new System.Windows.Forms.CheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Spell_Save_Mod_numeric = new System.Windows.Forms.NumericUpDown();
@@ -155,31 +177,14 @@
             this.Custom_2_Label_text = new System.Windows.Forms.TextBox();
             this.Custom_1_Text_text = new System.Windows.Forms.TextBox();
             this.Custom_1_Label_text = new System.Windows.Forms.TextBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.Critical_Additional2_Type_text = new System.Windows.Forms.TextBox();
-            this.Critical_Additional_Type_text = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.Critical_Additional2_Dice_text = new System.Windows.Forms.TextBox();
-            this.Critical_Additional_Dice_text = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.Critical_Crit_Type_text = new System.Windows.Forms.TextBox();
-            this.Critical_Crit_Dice_combo = new System.Windows.Forms.ComboBox();
-            this.Critical_Enable_Additional2_check = new System.Windows.Forms.CheckBox();
-            this.Critical_Enable_Additional_check = new System.Windows.Forms.CheckBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.Critical_Crit_NumDice_numeric = new System.Windows.Forms.NumericUpDown();
-            this.Critical_Enable_Crit_check = new System.Windows.Forms.CheckBox();
             this.Generate_btn = new System.Windows.Forms.Button();
             this.Reset_btn = new System.Windows.Forms.Button();
             this.Selected_check = new System.Windows.Forms.CheckBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.characterSheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.communityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.shapedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oGLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -190,13 +195,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.Damage_Dmg_Mod_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Damage_Dmg_NumDice_numeric)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Critical_Crit_NumDice_numeric)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Spell_Save_Mod_numeric)).BeginInit();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Critical_Crit_NumDice_numeric)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Header_RollType_combo
@@ -329,7 +335,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(12, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(430, 260);
@@ -1054,6 +1060,243 @@
             this.Damage_Type_Healing_radio.UseVisualStyleBackColor = true;
             this.Damage_Type_Healing_radio.CheckedChanged += new System.EventHandler(this.Damage_Type_Healing_radio_CheckedChanged);
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.label29);
+            this.tabPage4.Controls.Add(this.label30);
+            this.tabPage4.Controls.Add(this.label31);
+            this.tabPage4.Controls.Add(this.Critical_Additional2_Type_text);
+            this.tabPage4.Controls.Add(this.Critical_Additional_Type_text);
+            this.tabPage4.Controls.Add(this.label35);
+            this.tabPage4.Controls.Add(this.label36);
+            this.tabPage4.Controls.Add(this.label37);
+            this.tabPage4.Controls.Add(this.label38);
+            this.tabPage4.Controls.Add(this.Critical_Additional2_Dice_text);
+            this.tabPage4.Controls.Add(this.Critical_Additional_Dice_text);
+            this.tabPage4.Controls.Add(this.label39);
+            this.tabPage4.Controls.Add(this.label40);
+            this.tabPage4.Controls.Add(this.Critical_Crit_Type_text);
+            this.tabPage4.Controls.Add(this.Critical_Crit_Dice_combo);
+            this.tabPage4.Controls.Add(this.Critical_Enable_Additional2_check);
+            this.tabPage4.Controls.Add(this.Critical_Enable_Additional_check);
+            this.tabPage4.Controls.Add(this.label42);
+            this.tabPage4.Controls.Add(this.Critical_Crit_NumDice_numeric);
+            this.tabPage4.Controls.Add(this.Critical_Enable_Crit_check);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(422, 234);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Critical Damage";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label20.Location = new System.Drawing.Point(117, 215);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 13);
+            this.label20.TabIndex = 79;
+            this.label20.Text = "Ex: Necrotic";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label29.Location = new System.Drawing.Point(117, 139);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(65, 13);
+            this.label29.TabIndex = 80;
+            this.label29.Text = "Ex: Necrotic";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(117, 176);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(74, 13);
+            this.label30.TabIndex = 77;
+            this.label30.Text = "Damage Type";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(117, 100);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(74, 13);
+            this.label31.TabIndex = 78;
+            this.label31.Text = "Damage Type";
+            // 
+            // Critical_Additional2_Type_text
+            // 
+            this.Critical_Additional2_Type_text.Location = new System.Drawing.Point(120, 192);
+            this.Critical_Additional2_Type_text.Name = "Critical_Additional2_Type_text";
+            this.Critical_Additional2_Type_text.Size = new System.Drawing.Size(103, 20);
+            this.Critical_Additional2_Type_text.TabIndex = 9;
+            // 
+            // Critical_Additional_Type_text
+            // 
+            this.Critical_Additional_Type_text.Location = new System.Drawing.Point(120, 116);
+            this.Critical_Additional_Type_text.Name = "Critical_Additional_Type_text";
+            this.Critical_Additional_Type_text.Size = new System.Drawing.Size(103, 20);
+            this.Critical_Additional_Type_text.TabIndex = 6;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label35.Location = new System.Drawing.Point(7, 215);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(43, 13);
+            this.label35.TabIndex = 73;
+            this.label35.Text = "Ex: 4d4";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label36.Location = new System.Drawing.Point(7, 139);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(43, 13);
+            this.label36.TabIndex = 74;
+            this.label36.Text = "Ex: 4d4";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(3, 176);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(42, 13);
+            this.label37.TabIndex = 71;
+            this.label37.Text = "Special";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(3, 100);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(42, 13);
+            this.label38.TabIndex = 72;
+            this.label38.Text = "Special";
+            // 
+            // Critical_Additional2_Dice_text
+            // 
+            this.Critical_Additional2_Dice_text.Location = new System.Drawing.Point(6, 192);
+            this.Critical_Additional2_Dice_text.Name = "Critical_Additional2_Dice_text";
+            this.Critical_Additional2_Dice_text.Size = new System.Drawing.Size(100, 20);
+            this.Critical_Additional2_Dice_text.TabIndex = 8;
+            // 
+            // Critical_Additional_Dice_text
+            // 
+            this.Critical_Additional_Dice_text.Location = new System.Drawing.Point(6, 116);
+            this.Critical_Additional_Dice_text.Name = "Critical_Additional_Dice_text";
+            this.Critical_Additional_Dice_text.Size = new System.Drawing.Size(100, 20);
+            this.Critical_Additional_Dice_text.TabIndex = 5;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label39.Location = new System.Drawing.Point(117, 66);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(63, 13);
+            this.label39.TabIndex = 68;
+            this.label39.Text = "Ex: Piercing";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(117, 27);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(74, 13);
+            this.label40.TabIndex = 67;
+            this.label40.Text = "Damage Type";
+            // 
+            // Critical_Crit_Type_text
+            // 
+            this.Critical_Crit_Type_text.Location = new System.Drawing.Point(120, 43);
+            this.Critical_Crit_Type_text.Name = "Critical_Crit_Type_text";
+            this.Critical_Crit_Type_text.Size = new System.Drawing.Size(103, 20);
+            this.Critical_Crit_Type_text.TabIndex = 3;
+            // 
+            // Critical_Crit_Dice_combo
+            // 
+            this.Critical_Crit_Dice_combo.FormattingEnabled = true;
+            this.Critical_Crit_Dice_combo.Items.AddRange(new object[] {
+            "d4",
+            "d6",
+            "d8",
+            "d10",
+            "d12",
+            "d20"});
+            this.Critical_Crit_Dice_combo.Location = new System.Drawing.Point(55, 42);
+            this.Critical_Crit_Dice_combo.Name = "Critical_Crit_Dice_combo";
+            this.Critical_Crit_Dice_combo.Size = new System.Drawing.Size(53, 21);
+            this.Critical_Crit_Dice_combo.TabIndex = 2;
+            this.Critical_Crit_Dice_combo.Text = "d4";
+            // 
+            // Critical_Enable_Additional2_check
+            // 
+            this.Critical_Enable_Additional2_check.AutoSize = true;
+            this.Critical_Enable_Additional2_check.Location = new System.Drawing.Point(6, 156);
+            this.Critical_Enable_Additional2_check.Name = "Critical_Enable_Additional2_check";
+            this.Critical_Enable_Additional2_check.Size = new System.Drawing.Size(151, 17);
+            this.Critical_Enable_Additional2_check.TabIndex = 7;
+            this.Critical_Enable_Additional2_check.Text = "Enable Additional Damage";
+            this.Critical_Enable_Additional2_check.UseVisualStyleBackColor = true;
+            // 
+            // Critical_Enable_Additional_check
+            // 
+            this.Critical_Enable_Additional_check.AutoSize = true;
+            this.Critical_Enable_Additional_check.Location = new System.Drawing.Point(6, 80);
+            this.Critical_Enable_Additional_check.Name = "Critical_Enable_Additional_check";
+            this.Critical_Enable_Additional_check.Size = new System.Drawing.Size(151, 17);
+            this.Critical_Enable_Additional_check.TabIndex = 4;
+            this.Critical_Enable_Additional_check.Text = "Enable Additional Damage";
+            this.Critical_Enable_Additional_check.UseVisualStyleBackColor = true;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(3, 26);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(39, 13);
+            this.label42.TabIndex = 61;
+            this.label42.Text = "# Dice";
+            // 
+            // Critical_Crit_NumDice_numeric
+            // 
+            this.Critical_Crit_NumDice_numeric.Location = new System.Drawing.Point(6, 43);
+            this.Critical_Crit_NumDice_numeric.Maximum = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            this.Critical_Crit_NumDice_numeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.Critical_Crit_NumDice_numeric.Name = "Critical_Crit_NumDice_numeric";
+            this.Critical_Crit_NumDice_numeric.Size = new System.Drawing.Size(44, 20);
+            this.Critical_Crit_NumDice_numeric.TabIndex = 1;
+            this.Critical_Crit_NumDice_numeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // Critical_Enable_Crit_check
+            // 
+            this.Critical_Enable_Crit_check.AutoSize = true;
+            this.Critical_Enable_Crit_check.Location = new System.Drawing.Point(6, 6);
+            this.Critical_Enable_Crit_check.Name = "Critical_Enable_Crit_check";
+            this.Critical_Enable_Crit_check.Size = new System.Drawing.Size(136, 17);
+            this.Critical_Enable_Crit_check.TabIndex = 0;
+            this.Critical_Enable_Crit_check.Text = "Enable Critical Damage";
+            this.Critical_Enable_Crit_check.UseVisualStyleBackColor = true;
+            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.groupBox2);
@@ -1543,246 +1786,9 @@
             this.Custom_1_Label_text.Size = new System.Drawing.Size(100, 20);
             this.Custom_1_Label_text.TabIndex = 0;
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.label29);
-            this.tabPage4.Controls.Add(this.label30);
-            this.tabPage4.Controls.Add(this.label31);
-            this.tabPage4.Controls.Add(this.Critical_Additional2_Type_text);
-            this.tabPage4.Controls.Add(this.Critical_Additional_Type_text);
-            this.tabPage4.Controls.Add(this.label35);
-            this.tabPage4.Controls.Add(this.label36);
-            this.tabPage4.Controls.Add(this.label37);
-            this.tabPage4.Controls.Add(this.label38);
-            this.tabPage4.Controls.Add(this.Critical_Additional2_Dice_text);
-            this.tabPage4.Controls.Add(this.Critical_Additional_Dice_text);
-            this.tabPage4.Controls.Add(this.label39);
-            this.tabPage4.Controls.Add(this.label40);
-            this.tabPage4.Controls.Add(this.Critical_Crit_Type_text);
-            this.tabPage4.Controls.Add(this.Critical_Crit_Dice_combo);
-            this.tabPage4.Controls.Add(this.Critical_Enable_Additional2_check);
-            this.tabPage4.Controls.Add(this.Critical_Enable_Additional_check);
-            this.tabPage4.Controls.Add(this.label42);
-            this.tabPage4.Controls.Add(this.Critical_Crit_NumDice_numeric);
-            this.tabPage4.Controls.Add(this.Critical_Enable_Crit_check);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(422, 234);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Critical Damage";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label20.Location = new System.Drawing.Point(117, 215);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(65, 13);
-            this.label20.TabIndex = 79;
-            this.label20.Text = "Ex: Necrotic";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label29.Location = new System.Drawing.Point(117, 139);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(65, 13);
-            this.label29.TabIndex = 80;
-            this.label29.Text = "Ex: Necrotic";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(117, 176);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(74, 13);
-            this.label30.TabIndex = 77;
-            this.label30.Text = "Damage Type";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(117, 100);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(74, 13);
-            this.label31.TabIndex = 78;
-            this.label31.Text = "Damage Type";
-            // 
-            // Critical_Additional2_Type_text
-            // 
-            this.Critical_Additional2_Type_text.Location = new System.Drawing.Point(120, 192);
-            this.Critical_Additional2_Type_text.Name = "Critical_Additional2_Type_text";
-            this.Critical_Additional2_Type_text.Size = new System.Drawing.Size(103, 20);
-            this.Critical_Additional2_Type_text.TabIndex = 9;
-            // 
-            // Critical_Additional_Type_text
-            // 
-            this.Critical_Additional_Type_text.Location = new System.Drawing.Point(120, 116);
-            this.Critical_Additional_Type_text.Name = "Critical_Additional_Type_text";
-            this.Critical_Additional_Type_text.Size = new System.Drawing.Size(103, 20);
-            this.Critical_Additional_Type_text.TabIndex = 6;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label35.Location = new System.Drawing.Point(7, 215);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(43, 13);
-            this.label35.TabIndex = 73;
-            this.label35.Text = "Ex: 4d4";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label36.Location = new System.Drawing.Point(7, 139);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(43, 13);
-            this.label36.TabIndex = 74;
-            this.label36.Text = "Ex: 4d4";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(3, 176);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(42, 13);
-            this.label37.TabIndex = 71;
-            this.label37.Text = "Special";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(3, 100);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(42, 13);
-            this.label38.TabIndex = 72;
-            this.label38.Text = "Special";
-            // 
-            // Critical_Additional2_Dice_text
-            // 
-            this.Critical_Additional2_Dice_text.Location = new System.Drawing.Point(6, 192);
-            this.Critical_Additional2_Dice_text.Name = "Critical_Additional2_Dice_text";
-            this.Critical_Additional2_Dice_text.Size = new System.Drawing.Size(100, 20);
-            this.Critical_Additional2_Dice_text.TabIndex = 8;
-            // 
-            // Critical_Additional_Dice_text
-            // 
-            this.Critical_Additional_Dice_text.Location = new System.Drawing.Point(6, 116);
-            this.Critical_Additional_Dice_text.Name = "Critical_Additional_Dice_text";
-            this.Critical_Additional_Dice_text.Size = new System.Drawing.Size(100, 20);
-            this.Critical_Additional_Dice_text.TabIndex = 5;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label39.Location = new System.Drawing.Point(117, 66);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(63, 13);
-            this.label39.TabIndex = 68;
-            this.label39.Text = "Ex: Piercing";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(117, 27);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(74, 13);
-            this.label40.TabIndex = 67;
-            this.label40.Text = "Damage Type";
-            // 
-            // Critical_Crit_Type_text
-            // 
-            this.Critical_Crit_Type_text.Location = new System.Drawing.Point(120, 43);
-            this.Critical_Crit_Type_text.Name = "Critical_Crit_Type_text";
-            this.Critical_Crit_Type_text.Size = new System.Drawing.Size(103, 20);
-            this.Critical_Crit_Type_text.TabIndex = 3;
-            // 
-            // Critical_Crit_Dice_combo
-            // 
-            this.Critical_Crit_Dice_combo.FormattingEnabled = true;
-            this.Critical_Crit_Dice_combo.Items.AddRange(new object[] {
-            "d4",
-            "d6",
-            "d8",
-            "d10",
-            "d12",
-            "d20"});
-            this.Critical_Crit_Dice_combo.Location = new System.Drawing.Point(55, 42);
-            this.Critical_Crit_Dice_combo.Name = "Critical_Crit_Dice_combo";
-            this.Critical_Crit_Dice_combo.Size = new System.Drawing.Size(53, 21);
-            this.Critical_Crit_Dice_combo.TabIndex = 2;
-            this.Critical_Crit_Dice_combo.Text = "d4";
-            // 
-            // Critical_Enable_Additional2_check
-            // 
-            this.Critical_Enable_Additional2_check.AutoSize = true;
-            this.Critical_Enable_Additional2_check.Location = new System.Drawing.Point(6, 156);
-            this.Critical_Enable_Additional2_check.Name = "Critical_Enable_Additional2_check";
-            this.Critical_Enable_Additional2_check.Size = new System.Drawing.Size(151, 17);
-            this.Critical_Enable_Additional2_check.TabIndex = 7;
-            this.Critical_Enable_Additional2_check.Text = "Enable Additional Damage";
-            this.Critical_Enable_Additional2_check.UseVisualStyleBackColor = true;
-            // 
-            // Critical_Enable_Additional_check
-            // 
-            this.Critical_Enable_Additional_check.AutoSize = true;
-            this.Critical_Enable_Additional_check.Location = new System.Drawing.Point(6, 80);
-            this.Critical_Enable_Additional_check.Name = "Critical_Enable_Additional_check";
-            this.Critical_Enable_Additional_check.Size = new System.Drawing.Size(151, 17);
-            this.Critical_Enable_Additional_check.TabIndex = 4;
-            this.Critical_Enable_Additional_check.Text = "Enable Additional Damage";
-            this.Critical_Enable_Additional_check.UseVisualStyleBackColor = true;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(3, 26);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(39, 13);
-            this.label42.TabIndex = 61;
-            this.label42.Text = "# Dice";
-            // 
-            // Critical_Crit_NumDice_numeric
-            // 
-            this.Critical_Crit_NumDice_numeric.Location = new System.Drawing.Point(6, 43);
-            this.Critical_Crit_NumDice_numeric.Maximum = new decimal(new int[] {
-            50,
-            0,
-            0,
-            0});
-            this.Critical_Crit_NumDice_numeric.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.Critical_Crit_NumDice_numeric.Name = "Critical_Crit_NumDice_numeric";
-            this.Critical_Crit_NumDice_numeric.Size = new System.Drawing.Size(44, 20);
-            this.Critical_Crit_NumDice_numeric.TabIndex = 1;
-            this.Critical_Crit_NumDice_numeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // Critical_Enable_Crit_check
-            // 
-            this.Critical_Enable_Crit_check.AutoSize = true;
-            this.Critical_Enable_Crit_check.Location = new System.Drawing.Point(6, 6);
-            this.Critical_Enable_Crit_check.Name = "Critical_Enable_Crit_check";
-            this.Critical_Enable_Crit_check.Size = new System.Drawing.Size(136, 17);
-            this.Critical_Enable_Crit_check.TabIndex = 0;
-            this.Critical_Enable_Crit_check.Text = "Enable Critical Damage";
-            this.Critical_Enable_Crit_check.UseVisualStyleBackColor = true;
-            // 
             // Generate_btn
             // 
-            this.Generate_btn.Location = new System.Drawing.Point(367, 278);
+            this.Generate_btn.Location = new System.Drawing.Point(367, 293);
             this.Generate_btn.Name = "Generate_btn";
             this.Generate_btn.Size = new System.Drawing.Size(75, 23);
             this.Generate_btn.TabIndex = 1;
@@ -1792,7 +1798,7 @@
             // 
             // Reset_btn
             // 
-            this.Reset_btn.Location = new System.Drawing.Point(12, 278);
+            this.Reset_btn.Location = new System.Drawing.Point(12, 293);
             this.Reset_btn.Name = "Reset_btn";
             this.Reset_btn.Size = new System.Drawing.Size(75, 23);
             this.Reset_btn.TabIndex = 0;
@@ -1803,7 +1809,7 @@
             // Selected_check
             // 
             this.Selected_check.AutoSize = true;
-            this.Selected_check.Location = new System.Drawing.Point(93, 282);
+            this.Selected_check.Location = new System.Drawing.Point(93, 297);
             this.Selected_check.Name = "Selected_check";
             this.Selected_check.Size = new System.Drawing.Size(124, 17);
             this.Selected_check.TabIndex = 2;
@@ -1811,17 +1817,60 @@
             this.Selected_check.UseVisualStyleBackColor = true;
             this.Selected_check.CheckedChanged += new System.EventHandler(this.Selected_check_CheckedChanged);
             // 
-            // Form1
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.characterSheetsToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(452, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // characterSheetsToolStripMenuItem
+            // 
+            this.characterSheetsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.communityToolStripMenuItem,
+            this.shapedToolStripMenuItem,
+            this.oGLToolStripMenuItem});
+            this.characterSheetsToolStripMenuItem.Name = "characterSheetsToolStripMenuItem";
+            this.characterSheetsToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
+            this.characterSheetsToolStripMenuItem.Text = "Character Sheets";
+            // 
+            // communityToolStripMenuItem
+            // 
+            this.communityToolStripMenuItem.Name = "communityToolStripMenuItem";
+            this.communityToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.communityToolStripMenuItem.Text = "Community";
+            this.communityToolStripMenuItem.Click += new System.EventHandler(this.communitySheetsToolStripMenuItem_Click);
+            // 
+            // shapedToolStripMenuItem
+            // 
+            this.shapedToolStripMenuItem.Name = "shapedToolStripMenuItem";
+            this.shapedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.shapedToolStripMenuItem.Text = "Shaped";
+            this.shapedToolStripMenuItem.Click += new System.EventHandler(this.shapedSheetsToolStripMenuItem_Click);
+            // 
+            // oGLToolStripMenuItem
+            // 
+            this.oGLToolStripMenuItem.Name = "oGLToolStripMenuItem";
+            this.oGLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.oGLToolStripMenuItem.Text = "OGL";
+            this.oGLToolStripMenuItem.Click += new System.EventHandler(this.oGLSheetsToolStripMenuItem_Click);
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 308);
+            this.ClientSize = new System.Drawing.Size(452, 323);
             this.Controls.Add(this.Selected_check);
             this.Controls.Add(this.Reset_btn);
             this.Controls.Add(this.Generate_btn);
             this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Main";
             this.Text = "5E Roll Template Generator";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -1837,6 +1886,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Damage_Dmg_NumDice_numeric)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Critical_Crit_NumDice_numeric)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1846,9 +1898,8 @@
             this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Critical_Crit_NumDice_numeric)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2007,6 +2058,11 @@
         private System.Windows.Forms.RadioButton Damage_Type_Healing_radio;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton Damage_Type_Damage_radio;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem characterSheetsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem communityToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem shapedToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oGLToolStripMenuItem;
 
     }
 }
