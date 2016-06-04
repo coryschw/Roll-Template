@@ -1839,6 +1839,8 @@
             // 
             // communityToolStripMenuItem
             // 
+            this.communityToolStripMenuItem.Checked = true;
+            this.communityToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.communityToolStripMenuItem.Name = "communityToolStripMenuItem";
             this.communityToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.communityToolStripMenuItem.Text = "Community";
