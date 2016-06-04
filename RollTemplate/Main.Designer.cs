@@ -1855,6 +1855,7 @@
             // 
             // oGLToolStripMenuItem
             // 
+            this.oGLToolStripMenuItem.Enabled = false;
             this.oGLToolStripMenuItem.Name = "oGLToolStripMenuItem";
             this.oGLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.oGLToolStripMenuItem.Text = "OGL";

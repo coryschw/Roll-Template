@@ -391,7 +391,7 @@ namespace RollTemplate
 
             if (Custom_1_Label_text.TextLength > 0)
             {
-                if (!showclassactions)
+                if (!showclassactions && !Shaped_Sheets)
                 {
                     Add("showclassactions=1");
                     showclassactions = true;
@@ -400,7 +400,7 @@ namespace RollTemplate
             }
             if (Custom_2_Label_text.TextLength > 0)
             {
-                if (!showclassactions)
+                if (!showclassactions && !Shaped_Sheets)
                 {
                     Add("showclassactions=1");
                     showclassactions = true;
@@ -409,7 +409,7 @@ namespace RollTemplate
             }
             if (Custom_3_Label_text.TextLength > 0)
             {
-                if (!showclassactions)
+                if (!showclassactions && !Shaped_Sheets)
                 {
                     Add("showclassactions=1");
                     showclassactions = true;
@@ -418,7 +418,7 @@ namespace RollTemplate
             }
             if (Custom_text.TextLength > 0)
             {
-                if (!showclassactions)
+                if (!showclassactions && !Shaped_Sheets)
                 {
                     Add("showclassactions=1");
                     showclassactions = true;
@@ -433,7 +433,12 @@ namespace RollTemplate
 
         private void Initialize_Macro()
         {
-            Template_String = "&{template:5eDefault}";
+            if (Community_Sheets)
+                Template_String = "&{template:5eDefault}";
+            else if (Shaped_Sheets)
+                Template_String = "&{template:5e-shaped}";
+            else if (OGL_Sheets)
+                Template_String = "&{template:atk}";
             showclassactions = false;
         }
 
