@@ -1848,6 +1848,7 @@
             // 
             // shapedToolStripMenuItem
             // 
+            this.shapedToolStripMenuItem.Enabled = false;
             this.shapedToolStripMenuItem.Name = "shapedToolStripMenuItem";
             this.shapedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.shapedToolStripMenuItem.Text = "Shaped";
