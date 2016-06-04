@@ -26,6 +26,9 @@ namespace RollTemplate
         private string npc_string = ""; //npc_
         private string selected_string = ""; //selected|
         private bool showclassactions = false;
+        private bool Community_Sheets = true;
+        private bool Shaped_Sheets = false;
+        private bool OGL_Sheets = false;
 
         public Main()
         {
@@ -241,9 +244,9 @@ namespace RollTemplate
                 }
                 string AttackString = field_name + "=[[1d20";
                 if (Attack_Atk_Stat_combo.SelectedIndex > 0)
-                    AttackString = AttackString + " + @{" + selected_string + npc_string + ComboBoxItem_To_LowerString(Attack_Atk_Stat_combo.SelectedItem) + "_mod}";
+                    AttackString = AttackString + " + @{" + selected_string + npc_string + AttributeModifierSwitcher(ComboBoxItem_To_LowerString(Attack_Atk_Stat_combo.SelectedItem)) + "}";
                 if (Attack_Atk_PB_check.Checked)
-                    AttackString = AttackString + " + @{" + selected_string + "PB}";
+                    AttackString = AttackString + " + @{" + selected_string + ProficiencyBonus_String() + "}";
                 if (Attack_Atk_Mod_numeric.Value != 0)
                     AttackString = AttackString + " + " + Attack_Atk_Mod_numeric.Value;
                 Add(AttackString + "]]");
@@ -261,9 +264,9 @@ namespace RollTemplate
                     }
                     AttackString = field_name + "=[[1d20";
                     if (Attack_Adv_Stat_combo.SelectedIndex > 0)
-                        AttackString = AttackString + " + @{" + selected_string + npc_string + ComboBoxItem_To_LowerString(Attack_Adv_Stat_combo.SelectedItem) + "_mod}";
+                        AttackString = AttackString + " + @{" + selected_string + npc_string + AttributeModifierSwitcher(ComboBoxItem_To_LowerString(Attack_Adv_Stat_combo.SelectedItem)) + "}";
                     if (Attack_Adv_PB_check.Checked)
-                        AttackString = AttackString + " + @{" + selected_string + "PB}";
+                        AttackString = AttackString + " + @{" + selected_string + ProficiencyBonus_String() + "}";
                     if (Attack_Adv_Mod_numeric.Value != 0)
                         AttackString = AttackString + " + " + Attack_Adv_Mod_numeric.Value;
                     Add(AttackString + "]]");
@@ -287,7 +290,7 @@ namespace RollTemplate
                 }
                 string DamageString = field_name + "=[[" + Damage_Dmg_NumDice_numeric.Value + ComboBoxItem_To_LowerString(Damage_Dmg_Dice_combo.SelectedItem);
                 if (Damage_Dmg_Stat_combo.SelectedIndex > 0)
-                    DamageString = DamageString + " + @{" + selected_string + npc_string + ComboBoxItem_To_LowerString(Damage_Dmg_Stat_combo.SelectedItem) + "_mod}";
+                    DamageString = DamageString + " + @{" + selected_string + npc_string + AttributeModifierSwitcher(ComboBoxItem_To_LowerString(Damage_Dmg_Stat_combo.SelectedItem)) + "}";
                 if (Damage_Dmg_Mod_numeric.Value != 0)
                     DamageString = DamageString + " + " + Damage_Dmg_Mod_numeric.Value;
                 DamageString = DamageString + "]]";
@@ -362,7 +365,7 @@ namespace RollTemplate
                 if (NPC_check.Checked)
                     Save = "spellsavedc=[[@{" + selected_string + Spell_Save_Mod_numeric.Value + "}]]";
                 else
-                    Save = "spellsavedc=[[8+@{" + selected_string + "PB}+@{" + selected_string + "" + ComboBoxItem_To_LowerString(Spell_Save_Mod_combo.SelectedItem) + "_mod}]]";
+                    Save = "spellsavedc=[[8+@{" + selected_string + ProficiencyBonus_String() + "}+@{" + selected_string + "" + AttributeModifierSwitcher(ComboBoxItem_To_LowerString(Spell_Save_Mod_combo.SelectedItem)) + "}]]";
                 Add(Save);
                 Add("spellsavestat=" + (String)Spell_Save_Stat_combo.SelectedItem);
                 Add("spellsavesuccess=" + Spell_Save_Success_text.Text);
@@ -606,6 +609,124 @@ namespace RollTemplate
                 Damge_Sub_Label2.Text = "Ex: Necrotic";
                 Damge_Sub_Label3.Text = "Ex: Necrotic";
             }
+        }
+
+        private string AttributeModifierSwitcher(string value)
+        {
+            if (value.Equals("strength"))
+                return Strength_String();
+            else if (value.Equals("dexterity"))
+                return Dexterity_String();
+            else if (value.Equals("constitution"))
+                return Constitution_String();
+            else if (value.Equals("wisdom"))
+                return Wisdom_String();
+            else if (value.Equals("intelligence"))
+                return Intelligence_String();
+            else if (value.Equals("charisma"))
+                return Charisma_String();
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private string Strength_String()
+        {
+            if (Community_Sheets || OGL_Sheets)
+                return "strength_mod";
+            else if (Shaped_Sheets)
+                return "strength_bonus";
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private string Dexterity_String()
+        {
+            if (Community_Sheets || OGL_Sheets)
+                return "dexterity_mod";
+            else if (Shaped_Sheets)
+                return "dexterity_bonus";
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private string Constitution_String()
+        {
+            if (Community_Sheets || OGL_Sheets)
+                return "constitution_mod";
+            else if (Shaped_Sheets)
+                return "constitution_bonus";
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private string Wisdom_String()
+        {
+            if (Community_Sheets || OGL_Sheets)
+                return "wisdom_mod";
+            else if (Shaped_Sheets)
+                return "wisdom_bonus";
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private string Intelligence_String()
+        {
+            if (Community_Sheets || OGL_Sheets)
+                return "intelligence_mod";
+            else if (Shaped_Sheets)
+                return "intelligence_bonus";
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private string Charisma_String()
+        {
+            if (Community_Sheets || OGL_Sheets)
+                return "charisma_mod";
+            else if (Shaped_Sheets)
+                return "charisma_bonus";
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private string ProficiencyBonus_String()
+        {
+            if (Community_Sheets)
+                return "PB";
+            else if (OGL_Sheets || Shaped_Sheets)
+                return "pb";
+            else
+                throw new InvalidOperationException("Unknown Character Sheet Selected");
+        }
+
+        private void communitySheetsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Community_Sheets = true;
+            communitySheetsToolStripMenuItem.Checked = true;
+            OGL_Sheets = false;
+            oGLToolStripMenuItem.Checked = false;
+            Shaped_Sheets = false;
+            shapedSheetsToolStripMenuItem.Checked = false;
+        }
+
+        private void oGLSheetsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Community_Sheets = false;
+            communitySheetsToolStripMenuItem.Checked = false;
+            OGL_Sheets = true;
+            oGLToolStripMenuItem.Checked = true;
+            Shaped_Sheets = false;
+            shapedSheetsToolStripMenuItem.Checked = false;
+        }
+
+        private void shapedSheetsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Community_Sheets = false;
+            communitySheetsToolStripMenuItem.Checked = false;
+            OGL_Sheets = false;
+            oGLToolStripMenuItem.Checked = false;
+            Shaped_Sheets = true;
+            shapedSheetsToolStripMenuItem.Checked = true;
         }
 
     }

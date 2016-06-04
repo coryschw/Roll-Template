@@ -1,0 +1,12 @@
+L:\Github\Roll-Template\RollTemplate\bin\Debug\RollTemplate.exe.manifest
+L:\Github\Roll-Template\RollTemplate\bin\Debug\RollTemplate.application
+L:\Github\Roll-Template\RollTemplate\bin\Debug\RollTemplate.exe
+L:\Github\Roll-Template\RollTemplate\bin\Debug\RollTemplate.pdb
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.Main.resources
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.Generate_Popup.resources
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.Properties.Resources.resources
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.csproj.GenerateResource.Cache
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.exe.manifest
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.application
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.exe
+L:\Github\Roll-Template\RollTemplate\obj\x86\Debug\RollTemplate.pdb
