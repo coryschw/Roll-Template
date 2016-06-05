@@ -32,6 +32,9 @@ Rev 7:
 - Added a Drop-down menu to allow the selection of which sheet to use (Community sheet being default).
 - New functions and switch statement to know which attribute to grab string of, and boolean to determine current selected state.
 
+Rev 8:
+- Disabled the Shaped and OGL sheet functionality for now, there is more work that needs to be done to get these sheets working.
+
 #####About:
 I have made a utility for creating Roll Template Macros compatible with the 5th Edition (Community Contributes) Character Sheets. It is a small executable that will allow you to enter in the data to make it look like a roll from the character sheet. Makes quick work when you are trying to create macro's and you want them to look nice.
 
